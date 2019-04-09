@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creative Colorlib SignUp Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="jquery-3.3.1.js"></script>
+<script src="script.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+	<div class="main-w3layouts wrapper">
+        
+        <div class='form'>
+            <h1>REGISTER</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form class = 'hello' id="signupform" method="post"> 
+					<!-- action="#" > -->
+
+					<input class="text" id="username_s" type="text" name="Username" placeholder="Username" required="">
+					<input class="text email" id="email_s" type="email" name="email" placeholder="Email" required="">
+					<input class="text" id='password_s' type="password" name="password" placeholder="Password" required="">
+					<input class="text w3lpass" id="conf_pass_s" type="password" name="password" placeholder="Confirm Password" required="">
+					
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="SIGNUP">
+					<!-- <button id="signupbtn">SIGNUP</button> -->
+				</form>
+				<p class = 'message'>Don't have an Account? <a href="#"> Login Now!</a></p>
+			</div>
+        </div>
+    </div>
+    <div class='lform'>
+        <h1>LOGIN</h1>
+        <div class="main-agileinfo">
+			<div class="agileits-top">
+				<form class = 'hello' id="loginform"  method="post">
+					<input class="text email" id="email_l" type="email" name="email" placeholder="Email" required="">
+					<input class="text" id="password_l" type="password" name="password" placeholder="Password" required="">
+					<div class="wthree-text">
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="LOGIN">
+				</form>
+				<p class = 'message'>Don't have an Account? <a href="#"> Register Now!</a></p>
+			</div>
+        </div>
+        
+    </div>
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    </div>
+    <script src ='https://code.jquery.com/jquery-3.3.1.min.js'>
+    </script>
+    <script>
+    $('.message a').click(function(){
+        $('.form').animate({height:"toggle",opacity :"toggle"},"slow");
+        $('.lform').toggleClass("main")
+    })
+    </script>
+</body>
+</html>
