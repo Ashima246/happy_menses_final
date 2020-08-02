@@ -4,7 +4,7 @@ const db = new Sequelize({
     dialect: 'mysql',
     database: 'hm',
     username: 'root',
-    password: 'Ashima@123'
+    password: ''
   })
   const Products = db.define('products', {
     name: {
